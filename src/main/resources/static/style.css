@@ -1,0 +1,246 @@
+@charset "UTF-8";
+
+
+
+/* CABECALHO */
+/** CONFIGURACAO DOS CONTAINER FLUID **/
+.container-fluid {
+  padding-top: 50px;
+  padding-bottom: 80px;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+
+
+.nav-link{
+  font-size: 40px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: bold;
+  color:  #363636;
+
+}
+
+
+#paginaInicial {
+  padding-top: 205px;
+  background-image: url('fundo5N.jpg');
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 100% 720px;
+
+}
+
+.elemento{
+  padding: 5% 5%; 
+}
+
+.teste{
+  padding: 10% 10%;
+}
+
+.bg-primary{
+  background-image: linear-gradient(to right, #808080, #696969);
+
+}
+
+footer{
+  background-image: linear-gradient(to right, #808080, #696969);
+}
+
+.conteudoPrincipal{
+  background-image: url('fundo9.jpg');
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
+
+.fundo{
+  background-color: #DCDCDC;
+  font-family: 'Roboto', sans-serif;
+  color: black;
+
+}
+
+/* CIRCULO QUE CONTEM O FORMATO DA FOTO */
+.circle {
+  background-color: #aaa;
+  border-radius: 50%;
+  max-width: 250px;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.circle img {
+  width: 100%;
+}
+
+.lead {
+  font-size: 30pt;
+  color: white;
+}
+
+/* AUMENTANDO UM POUCO A FOTO DE APRESENTAÇÃO */
+#fotoApresentacao {
+    max-width: 300px;
+}
+a{
+  color: black;
+
+}
+
+a:hover{
+  color: white;
+  text-decoration:none;
+}
+
+#home,#envelope,#whatsapp{
+  margin-top: 5px;
+  font-size: 30px;
+}
+
+.contatos{
+  text-align: left;
+  margin-left: 30%;
+}
+#linkedin{
+  margin: 5px;
+  font-size: 40px;
+  transition-duration: 0.5s;
+}
+#linkedin:hover{
+  color: black;
+  font-size: 50px;
+  transition-duration: 0.5s;
+}
+
+/*CONFIGURANDO TEXTOS DO PARAGRAFO*/
+p {
+  font-size: 30px;
+  width: auto;
+  word-wrap: break-word;
+}
+
+.texto {
+  text-align: justify;
+  font-size: 20pt;
+  color: #FFFAFA;
+}
+.textoe{
+  text-align: justify; 
+
+}
+#experiencias{
+  font-family: 'Inconsolata', monospace;
+  color: black;
+}
+
+
+.logo{
+
+  width: 50px;
+}
+
+.logoFila2{
+  padding-top: 120px;
+  width: 60px;
+}
+
+#mysql{
+
+  padding-top: 5%;
+
+  width: 100px;
+}
+
+
+
+#java{
+  width: 80px;
+}
+
+
+
+
+
+
+/* RESPONSIVIDADE PARA TELAS MENORES */
+@media (max-width: 600px) {
+
+
+    .lead{
+      font-size: 20pt;
+    }
+
+    p.texto {
+      font-size: 100%;
+    }
+
+    .circle img {
+      width: 100%;
+    }
+
+    .circle {
+      max-width: 100px;
+    }
+   
+    .collapse,  .cabecalho {
+      width: 50%;
+    }
+
+    .nav-link {
+      width: auto;
+      font-size: 30px;
+      color: black;
+      word-wrap: break-word; 
+      text-align: center;
+
+    }
+    #paginaInicial{
+    background-size: 1000px;
+    }
+
+/* EVITANDO QUE EXIBA MARCACAO EM ALGUNS DISPOSITIVOS */
+    li{
+      list-style-type: none;
+    }
+
+/*CONFIGURANDO AREA DE HABILIDADES*/
+    
+}
+
+/* FIM DE RESPONSIVIDADE PARA TELAS */
+
+/*ANIMACAO DO SCROLL*/
+.anime {
+  opacity: 0;
+  transform: translate3d(-100px,0,0);
+  transition: .3s;
+}
+
+.anime-start {
+  opacity: 1;
+  transform: translate3d(0,0,0);
+}
+
+
+/*ANIMACAO DE TEXTO*/
+#apresentar::after {
+  font-size: 20pt;
+  content: '|';
+  margin-left: 5px;
+  opacity: 1;
+  animation: pisca .7s infinite;
+  color: white;
+}
+
+@keyframes pisca {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+
