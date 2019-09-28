@@ -1,11 +1,10 @@
-
 <!doctype html>
 <html lang="pt-br" xmlns="http://www.w3.org/1999/xhtml"
 xmlns:th="http://www.thymeleaf.org">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Everton batista - Portifolio">
+    <meta name="description" content="Everton Silvs - Portifólio">
   
     <!--LINKS DE FONTES--> 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&display=swap" rel="stylesheet">
@@ -15,7 +14,7 @@ xmlns:th="http://www.thymeleaf.org">
     
     <title>Everton Silva</title>
 
-    <link rel="icon" type="image/x-icon" th:href="@{familiaridade/spring.png}">
+    <link rel="icon" type="image/x-icon" href="familiaridade/spring.png">
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
@@ -34,20 +33,20 @@ xmlns:th="http://www.thymeleaf.org">
   
   <!-- CABEÇALHO-->
     
-      <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-        <a class="nav-link animated swing" href="portifolio.php">&lt;Everton Silva/&gt;</a>
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top ">
+        <a class="nav-link animated swing" th:href="@{index}">&lt;Everton Silva/&gt;</a>
         
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite" >
           <span class="navbar-toggler-icon"></span>
         </button>
         
-        <div class="collapse navbar-collapse" id="navbarSite">
+        <div class="collapse navbar-collapse " id="navbarSite">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item"><a class="nav-link" href="#navbarSite">Home</a></li>
             <li class="nav-item"><a class="nav-link" href="#apresentacao">Sobre</a></li>
-            <li class="nav-item"><a class="nav-link" href="#experiencias">Experiências</a></li>
+            <li class="nav-item"><a class="nav-link" href="#experiencias">Experiência</a></li>
             <li class="nav-item"><a class="nav-link" href="#Habilidades">Habilidades</a></li>
-            <li class="nav-item"><a class="nav-link" href="#contatos">Contatos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contatos">Contato</a></li>
           </ul>
         </div>
       
@@ -58,10 +57,10 @@ xmlns:th="http://www.thymeleaf.org">
 
 <div class="container-fluid elemento" id="paginaInicial">
       <div class="row">
-        <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12" align="center">
+        <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12" align="center" >
   
           <div class="circle wow bounceInDown" data-wow-duration="2s">
-            <img src="foto.jpg" alt="desenvolvedor" title="foto do desenvolvedor">
+            <img src="foto.jpg"  alt="desenvolvedor" title="foto do desenvolvedor">
           </div>
 
           <p class="lead" id="apresentar">Olá, me chamo Everton. Sou desenvolvedor de software.</p>
@@ -79,15 +78,14 @@ xmlns:th="http://www.thymeleaf.org">
   <h1>Sobre mim</h1>
 
             <div class="row elemento anime">
-                <div class="col-md-12 col-sm-12 col-xs-12 col-lg-6 div1 " align="center">
+                <div class="col-md-12 col-sm-12 col-xs-12 col-lg-6" align="center">
                       <div class="circle" id="fotoApresentacao">
-                         <img src="IMG_6442F.JPG" alt="formação" title="formação">
+                         <img src="IMG_6442F.jpg" alt="formação" title="formação">
                        </div>
                 </div>
-                <div class="col-md-12 col-sm-12 col-xs-12 col-lg-6" align="center">
+                <div class="col-md-12 col-sm-12 col-xs-12 col-lg-6">
                       <p class="texto">
-                        Garoto de 19 anos, Buscando e arriscando novos desafios. Recém 
-                        formado em Téc. Informatica para Internet, disposto a profunda meus conhecimentos, na liderança de resultados para empresa. Meu hobby é conhecer novas tecnologias, poder expandir na área de TI. amo dar vidas as telas como também solucionar problemas dos usuários. Portanto, não tenho uma preferência entre front-end ou back-end. Pretendo ingressar em cursos superiores no próximo ano, nessa área que tanto amo. </p>
+                        Garoto de 19 anos, Buscando e arriscando novos desafios. Recém formado em Téc. Informática para Internet, disposto a profunda meus conhecimentos, na liderança de resultados para empresa. Meu hobby é conhecer novas tecnologias, poder expandir na área de TI. amo dar vidas as telas como também solucionar problemas dos usuários. Portanto, não tenho uma preferência entre front-end ou back-end. Pretendo ingressar em cursos superiores no próximo ano, nessa área que tanto amo.</p>
 
                 </div>
             </div>
@@ -104,13 +102,20 @@ xmlns:th="http://www.thymeleaf.org">
 
         <div class="row anime elemento">
 
-            <div class="col-md-12 col-sm-12 col-xs-12 col-lg-6 div1 anime" align="center">
+            <div class="col-md-12 col-sm-12 col-xs-12 col-lg-6 anime" id="titulos">
                
-               <br><br><br><br> <h1 class="animated">Monitoria </h1> <p> duração de 4 meses</p>
+               <br><br>
+               <p id="paragrafo">
+               &nbsp;&bull;Monitoria  (duração de 4 meses)
+               <br> <br>
+               &nbsp;&bull;Oficinas
+               <br> <br>
+               &nbsp;&bull; Trabalho voluntario
+              </p>
             </div>
 
             <div class="col-md-12 col-sm-12 col-xs-12 col-lg-6" align="center">
-                <p class="textoe">Durante o curso fui monitor da disciplina de Desenvolvimento para WebI, auxiliando os alunos na criação de sites estetico e dinamico utilizando HTML5, CSS3, JavaScript, PHP e MySQL. Participei de oficinais na semana de informática e atuei como voluntario no evento ação IFPE organizado pelo campus de ensino.</p>
+                <p class="textoe ">Durante o curso fui monitor da disciplina de Desenvolvimento para WebI, auxiliando os alunos na criação de sites estetico e dinamico utilizando HTML5, CSS3, JavaScript, PHP e MySQL. Participei de oficinais na semana de informática e atuei como voluntario no evento ação IFPE organizado pelo campus de ensino.     </p>
             </div>
 
         </div>
@@ -121,25 +126,25 @@ xmlns:th="http://www.thymeleaf.org">
 <h1>Habilidades</h1>
     
 
-      <div class="row teste">
+      <div class="row" id="teste">
 
-             <div class="col-md-12 col-sm-12 col-xs-12 col-lg-4" id="idiomas">
+             <div class="col-md-6 col-sm-6 col-xs-6 col-lg-4 " id="idiomas">
               <h2>Idiomas</h2>
-               <br><br>
-               <p style="font-size: 18pt">Português: 
-                <img src="https://img.icons8.com/color/48/000000/filled-star.png" width="25" alt="estrela amarela" title="Leitura N1">
-                <img src="https://img.icons8.com/color/48/000000/filled-star.png" width="25" alt="estrela amarela" title="Leitura N2">
-                <img src="https://img.icons8.com/color/48/000000/filled-star.png" width="25" alt="estrela amarela" title="Escrita N1">
-                <img src="https://img.icons8.com/color/48/000000/filled-star.png" width="25" alt="estrela amarela" title="Escrita N2">
-                <img src="https://img.icons8.com/color/48/000000/filled-star.png" width="25" alt="estrela amarela" title="Leitura e escrita">
+               <br>
+               <p style="font-size: 17pt">Português: 
+                <img src="https://img.icons8.com/color/48/000000/filled-star.png" class="icon" alt="estrela amarela" title="Leitura N1">
+                <img src="https://img.icons8.com/color/48/000000/filled-star.png" class="icon" alt="estrela amarela" title="Leitura N2">
+                <img src="https://img.icons8.com/color/48/000000/filled-star.png" class="icon" alt="estrela amarela" title="Escrita N1">
+                <img src="https://img.icons8.com/color/48/000000/filled-star.png" class="icon" alt="estrela amarela" title="Escrita N2">
+                <img src="https://img.icons8.com/color/48/000000/filled-star.png" class="icon" alt="estrela amarela" title="Leitura e escrita">
               </p>
 
-                <p style="font-size: 18pt">Inglês: 
-                  <img src="https://img.icons8.com/color/48/000000/filled-star.png" width="25" alt="estrela amarela" title="A1-Iniciante">
-                <img src="https://img.icons8.com/color/48/000000/filled-star.png" width="25" alt="estrela amarela" title="A2-Iniciante">
-                <img src="https://img.icons8.com/color/48/000000/filled-star.png" width="25" alt="estrela amarela" title="B1-Intermediário">
-                <img src="https://img.icons8.com/color/48/000000/star--v2.png" width="30" alt="estrela branca" title="B2-Intermediário">
-               <img src="https://img.icons8.com/color/48/000000/star--v2.png" width="30" alt="estrela branca" title="C1-Avançado">
+                <p style="font-size: 17pt">Inglês: 
+                  <img src="https://img.icons8.com/color/48/000000/filled-star.png" class="icon" alt="estrela amarela" title="A1-Iniciante">
+                <img src="https://img.icons8.com/color/48/000000/filled-star.png" class="icon" alt="estrela amarela" title="A2-Iniciante">
+                <img src="https://img.icons8.com/color/48/000000/filled-star.png" class="icon" alt="estrela amarela" title="B1-Intermediário">
+                <img src="https://img.icons8.com/color/48/000000/star--v2.png" class="icon" alt="estrela branca" title="B2-Intermediário">
+               <img src="https://img.icons8.com/color/48/000000/star--v2.png" class="icon" alt="estrela branca" title="C1-Avançado">
                 </p>
 
             </div>
@@ -147,7 +152,7 @@ xmlns:th="http://www.thymeleaf.org">
             
           
 
-            <div class="col-md-12 col-sm-12 col-xs-12 col-lg-4 " id="conhecimento">
+            <div class="col-md-6 col-sm-6 col-xs-6 col-lg-4 " id="conhecimento">
                <h3>Conhecimento em:</h3>
               
 
@@ -175,6 +180,7 @@ xmlns:th="http://www.thymeleaf.org">
 
 <!--contatos-->
 <footer class="container-fluid" id="contatos">
+
   <div class="row">
     <div class="col-md-6 col-sm-12 col-xs-12 col-lg-6" >
           <h1>Contatos</h1>
@@ -189,28 +195,30 @@ xmlns:th="http://www.thymeleaf.org">
             <a href="https://wa.me/5581986919734" target="_blank">
             <i class="fa fa-whatsapp" id="whatsapp"></i> 081 9 8691-9734</a>
             
-            <br></div>  
+           </div>  
           
          
       </div>
-      <div class="col-md-3 col-sm-12 col-xs-12 col-lg-6">
+      <div class="col-md-6 col-sm-12 col-xs-12 col-lg-6" id="anexo">
         <h1>Anexos</h1>
-<a href="Everton_Batista_Silva-CV.pdf" target="_blank">
-        <i class="fa fa-file-pdf-o" id="home"></i> Currículo</a> 
+        
+        <a href="Everton_Batista_Silva-CV.pdf" target="_blank">
+        <i class="fa fa-file-pdf-o" id="file"></i> Currículo</a> 
 
       </div>
   </div>
-  <div class="row">
-    <div class="col-md-3 col-sm-12 col-xs-12 col-lg-12">
+
+  <div class="row" id="redes">
+    <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12" >
       
       <a href="https://www.instagram.com/everton.batista16/" target="_blank">
-      <i class="fa fa-instagram" id="linkedin"></i></a>
+      <i class="fa fa-instagram" id="instagram" ></i></a>
 
       <a href="https://www.linkedin.com/in/everton-batista-2b6661186" target="_blank">
       <i class="fa fa-linkedin" id="linkedin"></i></a>
 
       <a href="https://github.com/everrton0167" target="_blank">
-      <i class="fa fa-github" id="linkedin"></i></a>
+      <i class="fa fa-github" id="github"></i></a>
 
       <br><br>
       &copy;Desenvolvido por Everton Silva<br> v1.0.0 
@@ -242,6 +250,7 @@ xmlns:th="http://www.thymeleaf.org">
 
 <script>
   new WOW().init();
+
 </script>
 </body>
 </html>

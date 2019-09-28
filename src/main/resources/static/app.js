@@ -28,13 +28,13 @@ var $targetP = $('.texto'),
 /*ANIMACAO DA AREA DE HABILIDADE*/
 
 var $targetI = $('#idiomas'), 
-	animationClassI = 'animated bounceInLeft', offset = $(window).height() * 3/4;
+	animationClassI = 'animated zoomInLeft', offset = $(window).height() * 3/4;
 
 var $targetC = $('#conhecimento'), 
-	animationClassC = 'animated bounceInDown', offset = $(window).height() * 3/4;
+	animationClassC = 'animated zoomInDown', offset = $(window).height() * 3/4;
 
 var $targetF = $('#familiaridade'), 
-	animationClassF = 'animated bounceInUp', offset = $(window).height() * 3/4;
+	animationClassF = 'animated zoomInUp', offset = $(window).height() * 3/4;
 
 
 
@@ -209,3 +209,17 @@ $(function() {
     }
   });
 });
+
+
+
+
+   
+$(document).ready(function(){
+  $("button").click(function(){
+    if($(window).scrollTop() < 100) {
+    	$("nav").toggleClass("bg-primary");
+    }
+
+  });
+});
+   
